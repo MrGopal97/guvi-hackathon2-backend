@@ -17,7 +17,8 @@ const orderRoutes = require("./routes/orders.routes");
 const authService = require("./services/auth.services");
 
 const app = express();
-const PORT = (process.env.PORT) ? (process.env.PORT) : 3001;
+// const PORT = (process.e? (process.env.PORT) : 3001;nv.PORT) 
+const port = process.env.PORT || 8000;
 
 async function load() {
   try {
